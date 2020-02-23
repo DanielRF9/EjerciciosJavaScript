@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Ejercicio 6 JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo6.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+</head>
+<body>
+	<script src="js/edad.js"></script>
+	<header>
+		<div class="contenedor"> 
+			<input type="checkbox" id="btn-menu">
+			<label for="btn-menu" >
+				<img src="img/js.png" alt="" height="30" width="30">
+			</label>
+			<nav class="menu">
+				<ul> 
+					<li><a  href="index.html">Inicio</a></li>
+					<li><a href="ejercicio1.html">Ejercicio 1</a></li>
+					<li><a href="ejercicio2.html">Ejercicio 2</a></li>
+					<li><a href="ejercicio3.html">Ejercicio 3</a></li>
+					<li><a href="ejercicio4.html">Ejercicio 4 </a></li>
+					<li><a href="ejercicio5.html">Ejercicio 5</a></li>
+					<li><a href="ejercicio6.html">Ejercicio 6</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main> 
+		<h1>Ejercicio 6</h1>
+	</main>
+
+	<section>
+		<div class="tab6">
+			<form name="formulario6" method="post">
+				<table border="1" width="600" height="550">
+					<tr>
+						<th width="400" height="100">
+							Fecha de nacimiento 
+						</th>
+						<th width="315">
+							Edad
+						</th>
+					</tr>
+					<tr>
+						<td width="400" height="100"> Introduce tu fecha de nacimiento:</td>
+						<td><input type="date" min="1920-01-01" max="2020-02-29" name="user_date" id="user_date" /></td>
+					</tr>
+					<tr>
+						<td><input type="button" name="enviar" class="boton" value="Calcular edad" onclick="javascript:calcularEdad()"></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td width="400" height="100">Tu edad es </td>
+						<td><div id="result"></div></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		
+	</section>
+</body>
+</html>

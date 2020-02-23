@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 4 JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo4.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+</head>
+<body>
+	<script src="js/calificaciones.js"></script>
+	<header>
+		<div class="contenedor"> 
+			<input type="checkbox" id="btn-menu">
+			<label for="btn-menu" >
+				<img src="img/js.png" alt="" height="30" width="30">
+			</label>
+			<nav class="menu">
+				<ul> 
+					<li><a  href="index.html">Inicio</a></li>
+					<li><a href="ejercicio1.html">Ejercicio 1</a></li>
+					<li><a href="ejercicio2.html">Ejercicio 2</a></li>
+					<li><a href="ejercicio3.html">Ejercicio 3</a></li>
+					<li><a href="ejercicio4.html">Ejercicio 4 </a></li>
+					<li><a href="ejercicio5.html">Ejercicio 5</a></li>
+					<li><a href="ejercicio6.html">Ejercicio 6</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<h1> Ejercicio 4</h1>
+	</main>
+
+	<section>
+		<div class="tab4">
+			<form name="formulario4" method="post">
+				<table border="1" width="600" height="550">
+					<tr>
+						<th width="400" height="100">
+							Calificaciones
+						</th>
+						<th width="315">
+							Promedio
+						</th>
+					</tr>
+					<tr>
+						<td width="400" height="100"> Introduce la calificación del primer parcial:</td>
+						<td><input type="number" min="0" max="10" maxlenght="2" step="1" name="parcial1" onkeydown="if(this.value.length==2) return false;"></td>
+					</tr>
+					<tr>
+						<td width="400" height="100"> Introduce la calificación del segundo parcial:</td>
+						<td><input type="number" min="0" max="10" maxlenght="2" name="parcial2"  onkeydown="if(this.value.length==2) return false;"></td>
+					</tr>
+					<tr>
+						<td width="400" height="100"> Introduce la calificación del tercer parcial:</td>
+						<td><input type="number" min="0" max="10" maxlenght="2" name="parcial3" onkeydown="if(this.value.length==2) return false;"></td>
+					</tr>
+					<tr>
+						<td width="400" height="100"> Introduce la calificación de tu examen final:</td>
+						<td><input type="number" min="0" max="10" maxlenght="2" name="examen"  onkeydown="if(this.value.length==2) return false;"></td>
+					</tr>
+					<tr>
+						<td width="400" height="100"> Introduce la calificación de tu trabajo final:</td>
+						<td><input type="number" min="0" max="10" maxlenght="2" name="trabajo"  onkeydown="if(this.value.length==2) return false;"></td>
+					</tr>
+					<tr>
+						<td><input type="button" name="enviar" class="boton" value="Calcular promedio final" onclick="calif()"></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td width="400" height="100">Calificacion final:</td>
+						<td><input type="text" name="promedio" id="promedioi" class="input_text" readonly="readonly"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</section>
+</body>
+</html>
